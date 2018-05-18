@@ -4,7 +4,9 @@ html,
 body {
 	height: 100%
 }
-
+.pt150 {
+	height: 0px;
+}
 	body {
 		margin: 0px;
 		background-color: #f8f8f8;
@@ -90,7 +92,6 @@ body {
 
 	.content {
 		width: 870px;
-		margin-top: 150px;
 		background-color: #f8f8f8;	
 	}
 
@@ -1460,6 +1461,10 @@ body {
 	.sidebar {
 		display: none;
 	}	
+
+	.pt150 {
+		height: 150px;
+	}
 
 }
 
