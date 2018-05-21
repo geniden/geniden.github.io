@@ -858,7 +858,7 @@ body {
 
 	.speedbar {
 		padding-top: 30px;
-		padding-bottom: 45px;
+		padding-bottom: 0px;
 	}
 
 	.speedbar>ul {
@@ -995,6 +995,11 @@ body {
 		margin-left: 125px;
 		cursor: pointer;	
 		outline: none;
+	}
+
+
+	.cartadd-btn:hover {
+		box-shadow: 0 0 10px rgba(0,0,0,0.4);
 	}
 
 	.info-overview {
@@ -1594,5 +1599,10 @@ body {
 		display: none;		
 	}
 
+	/* catalog page */	
+
+	.header-light {
+		display: none;			
+	}
 }
 
