@@ -1,4 +1,7 @@
 /* basic */
+a {
+	outline:none;
+}
 
 html,
 body {
@@ -15,7 +18,7 @@ body {
 	.wrapper {
 		width: 100%;
 		min-width: 1180px;
-				min-height: 100%;
+		min-height: 100%;
 	}
 
 	h1 {
@@ -377,6 +380,7 @@ body {
 
 	.product {
 		display: block;
+		position: relative;		
 		background: #fff;
 		width: 270px;
 		height: 320px;
@@ -452,20 +456,44 @@ body {
 	.spec-new {
 		display: block;
 		position: absolute;
-		height: 46px;
-		width: 46px;	
-		background: url('../img/new.png') center top no-repeat;
-		margin-left: 224px;
+		border: 30px solid transparent;
+		border-top: 30px solid #e24602;
+		border-right: 30px solid #e24602;
+		right: 0px;
+		top: 0px;
+	}
+
+	.spec-new>span {
+    position: absolute;
+    top: -19px;
+    right: -25px;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    transform: rotate(45deg);
 	}
 
 	.spec-hot {
 		display: block;
 		position: absolute;
-		height: 46px;
-		width: 46px;	
-		background: url('../img/hot.png') center top no-repeat;
-		margin-left: 224px;
+		border: 30px solid transparent;
+		border-top: 30px solid #ffe900;
+		border-right: 30px solid #ffe900;		
+		right: 0px;
+		top: 0px;
 	}
+
+	.spec-hot>span {
+    position: absolute;
+    top: -19px;
+    right: -25px;
+    font-family: Roboto;
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    transform: rotate(45deg);
+	}	
 
 
 	/* gallery */
@@ -564,18 +592,19 @@ body {
 		justify-content: space-between;
 	}
 
-	.brands-carousel>div {
+	.brands-carousel>a {
 		display: block;
 	}
 
-	.brands-carousel>div>a {
-		display: block;
+	.brands-carousel>a>img:hover {
+		opacity: 0.85;
 	}
 
-	.brands-carousel>div>a>img {
+	.brands-carousel>a>img {
 		width: 160px;
 		height: 160px;	
 	}
+
 
 	/* gallery */
 
@@ -636,8 +665,12 @@ body {
 		display: block;
 	}
 
-	.instagram-carousel>div>a {
+	.instagram-carousel>a {
 		display: block;
+	}
+
+	.instagram-carousel>a:hover {
+		opacity: 0.85;
 	}
 
 
@@ -1268,7 +1301,8 @@ body {
 		flex-direction: row;
 		justify-content: center;
 	}	
-
+	
+	
 	/* header mobile */
 
 	.container1 {
@@ -1321,14 +1355,16 @@ body {
 		padding: 10px 50px 0 0px;
     background: url(../img/m.png) no-repeat;
     width: 38px;
-    height: 28px;
+		height: 28px;
+		cursor: pointer;
 	}
 	
 	.dropdown { 
 		display: none;
 		position: absolute;
+		right: 0px;
     width: 590px;
-    z-index: 2;
+		z-index: 2;		
 	}
 
 	.menu_m {
@@ -1342,7 +1378,7 @@ body {
 	}
 
 	.menu_m>li:first-child {
-		background-color: #26d2fc;
+		background-color: grey;
 		height: 0px;
 	}
 
@@ -1365,6 +1401,18 @@ body {
 	}
 
 	/* catalog big-product */
+
+	.sidebar {
+		display: none;
+	}	
+
+	.pt150 {
+		height: 150px;
+	}
+
+	.speedbar {
+		display: none;
+	}		
 
 	.catalog {
 		display: flex;
@@ -1439,37 +1487,28 @@ body {
 		text-decoration: line-through;
 		padding: 0px 12px 0 0;			
 	}
-	
+
 	.spec-new {
 		display: block;
+		position: absolute;
+		border: 30px solid transparent;
+		border-top: 30px solid #e24602;
+		border-right: 30px solid #e24602;
+		right: 0px;
+		top: 0px;
+	}
+
+	.spec-new>span {
     position: absolute;
-    height: 60px;
-    width: 60px;
-    background: url('../img/new.png') center top no-repeat;
-    margin-left: 518px;
+    top: -19px;
+    right: -25px;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    transform: rotate(45deg);
 	}
 	
-	.spec-hot {
-		display: block;
-		position: absolute;
-    height: 60px;
-    width: 60px;
-		background: url('../img/hot.png') center top no-repeat;
-		margin-left: 518px;
-	}
-
-	.sidebar {
-		display: none;
-	}	
-
-	.pt150 {
-		height: 150px;
-	}
-
-	.speedbar {
-		display: none;
-	}		
-
 	/* product page */
 
 	.info {
