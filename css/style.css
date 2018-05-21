@@ -1490,25 +1490,45 @@ body {
 
 	.spec-new {
 		display: block;
-		position: absolute;
-		border: 30px solid transparent;
-		border-top: 30px solid #e24602;
-		border-right: 30px solid #e24602;
-		right: 0px;
-		top: 0px;
+    position: absolute;
+    border: 60px solid transparent;
+    border-top: 60px solid #e24602;
+    border-right: 60px solid #e24602;
+    right: 0px;
+    top: 0px;
 	}
 
 	.spec-new>span {
-    position: absolute;
-    top: -19px;
-    right: -25px;
+		position: absolute;
+    top: -39px;
+    right: -55px;
     font-family: Roboto;
     color: #fff;
-    font-size: 14px;
+    font-size: 38px;
     text-transform: uppercase;
     transform: rotate(45deg);
 	}
 	
+	.spec-hot {
+		display: block;
+    position: absolute;
+    border: 60px solid transparent;
+    border-top: 60px solid #ffe900;
+    border-right: 60px solid #ffe900;
+    right: 0px;
+    top: 0px;
+	}
+
+	.spec-hot>span {
+		position: absolute;
+    top: -39px;
+    right: -55px;
+    font-family: Roboto;
+    color: #000;
+    font-size: 38px;
+    text-transform: uppercase;
+    transform: rotate(45deg);
+	}	
 	/* product page */
 
 	.info {
