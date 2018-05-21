@@ -1065,22 +1065,14 @@ body {
 		text-align: left;
 	}
 
-	h2 {
-		font-family: Raleway;
-		font-size: 30px;
-		font-weight: 700;
-		color: #333333;
-		text-align: left;
-		text-transform: uppercase;
-		font-style: italic;
-		padding: 50px 0px 35px 0px;
-	}
+
 
 	/* contacts page */
 
 
 	.contacts {
-		display: inline-flex;
+		display: flex;
+    flex-direction: row;
 		width: 870px;
 		margin-bottom: 60px;	
 	}
@@ -1090,18 +1082,13 @@ body {
 		width: 370px;
 	}
 
-	.contacts-data {
-		display: block;
-		width: 450px;
-		margin-left: 25px;
-	}
 
 	/* contacts-form */
 
 	.contacts-form {
 		display: inline-flex;
 		width: 370px;
-		border-right: 1px solid #d6d6d6;
+		border-right: 0px solid #d6d6d6;
 	}
 
 	.data {
@@ -1599,16 +1586,180 @@ body {
 		display: none;		
 	}
 
-	/* catalog page */	
-
 	.header-light {
 		display: none;			
 	}
 
 	/* contacts page */	
+
 	.header-map {
 		display: none;			
 	}
+
+	.contacts {
+		display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 60px;
+	}
+
+	.contacts-data {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* contacts-form */
+
+	.brands-short { 
+		display: none;
+	}	
+
+	.contacts-form {
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+	}
+
+	.data {
+		display: block;
+		padding: 3px 5px;
+		margin-bottom: 22px;
+		font-size: 25px;
+		border: 1px solid grey;
+		box-sizing: border-box;
+		background-color: #ffffff;
+		width: 90%;
+		height: 40px;
+		outline: none;
+		text-transform: capitalize;
+	}
+
+	textarea {
+		display: block;
+		padding: 3px 5px;
+		margin-bottom: 22px;
+		border: 1px solid grey;
+		box-sizing: border-box;
+		background-color: #ffffff;
+		font-size: 25px;
+		width: 90%;
+		height:100px;		
+		outline: none;
+		text-transform: capitalize;	
+	}
+
+	label {
+		display: block;
+		font-family: Roboto;
+		color: #333333;	
+		font-size: 25px;
+		font-weight: 500;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 10px 0px;
+		outline: none;	
+	}
+
+	.sendform {
+		display: block;
+		background-color: #d6d6d6;
+		border: 1px solid #d6d6d6;
+		font-family: Roboto;
+		font-size: 16px;
+		width: 90%;
+		font-weight: 500;
+		color: #353535;
+		text-transform: uppercase;
+		padding: 13px 20px;
+		cursor: pointer;
+		outline: none;
+	}
+
+	.sendform:hover {
+		background-color: #e6e5e5;
+		border: 1px solid #e6e5e5;
+	}
+
+	.contacts-data>h2 {
+		font-family: Roboto;
+		color: #353535;
+		font-size: 30px;
+		font-weight: 900;
+		line-height: 14px;
+		text-align: center;
+	}
+
+	.data-address  {
+		font-family: Roboto;
+		color: #777777;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 14px;
+		text-align: center;
+		width: 90%;
+	}
+
+	.point:before  {
+		display: inline-block;
+		margin: 0px 8px 0 0px;
+		background: url(../img/point.png) no-repeat;
+		width: 14px;
+		height: 21px;
+		content: '';
+	}
+
+	.contacts-data-address>p {
+		font-size: 30px;
+    line-height: 1.2;
+	}
+	
+	.data-phone { 
+		font-family: Roboto;
+		color: #333333;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 20px;
+		text-align: center;
+	}
+
+	.data-phone:before { 
+		display: inline-block;
+		margin: 0px 9px -6px 0px;
+		background: url(../img/phone.png) no-repeat;
+		width: 21px;
+		height: 21px;
+		content: '';
+	}
+
+	.data-email { 
+		font-family: Roboto;
+		color: #333333;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 20px;
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	.data-email:before { 
+		display: inline-block;
+		margin: 0px 9px -8px 0px;
+		background: url(../img/email.png) no-repeat;
+		width: 21px;
+		height: 21px;
+		content: '';
+	}
+
+	.data-comment {
+		font-family: Roboto;
+		color:  #333333;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 14px;
+		text-align: center;	
+		width: 90%;
+	}	
 
 }
 
